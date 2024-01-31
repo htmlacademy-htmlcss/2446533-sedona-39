@@ -2,7 +2,7 @@
 
 * Студент: [Влад Мальков](https://up.htmlacademy.ru/htmlcss/39/user/2446533).
 * Наставник: [Оксана Вайнруб](https://htmlacademy.ru/profile/id166797).
-
+* Сайт: [Мой проект Седона](https://vladmalek.github.io/2446533-sedona-39/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
