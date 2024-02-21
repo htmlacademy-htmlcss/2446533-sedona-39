@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #FFFFFF;
+
+}
+
+.page-header {
+  color: #000000;
+  background: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+}
+
+.page-header-list {
+  list-style: none;
+}
+
+.item-link-navigation {
+  color: #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
+}
+
+.header-button-link {
+
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+}
+
+.want-it {
+  background-color: #756157;
+  border-radius: 4px;
+  padding: 8px 34px;
+}
+
+.hero-section {
+  background-image: url(../images/sedona-index-background.jpg);
+  background-color: lightblue;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.description-paragraph {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.reason-paragraph {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages-title {
+  font-weight: 700;
+  line-height: 28px;
+  font-size: 24px;
+}
+
+.advantages-paragraph {
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 18px;
+}
+
+.blue-paragraph-advantages {
+  background-color: #82B3D3;
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-item {
+  text-align: center;
+}
+
+.second-advantages {
+  background-color: #83B3D31F;
+}
+
+.third-advantages {
+  background-color: #83B3D333;
+}
+
+.fourth-advatages {
+  background-color: #83B3D31F;
+}
+
+.service-list {
+  list-style: none;
+}
+
+.service-item h4 {
+  font-weight: 700;
+}
+
+
+.service-souvenirs-blue-block {
+  background-color: #83B3D31F;
+}
+
+.service-eat-white-block {
+  background-color: #FFFFFF;
+}
+
+.service-living-blue-block {
+  background-color: #83B3D31F;
+}
+
+.service-section {
+  text-align: center;
+}
+
+.search-section {
+  text-align: center;
+}
+
+.search-section h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.search-paragraph-desc {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.hotel-link-button {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.subscribe-section {
+  text-align: center;
+  background-image: url(../images/subscribe-background.jpg);
+  background-color: lightblue;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.footer-phone-link {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000000;
+}
