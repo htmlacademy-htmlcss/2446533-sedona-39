@@ -18,9 +18,9 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  color: #000000;
-  background-color: #FFFFFF;
-
+  color: #333333;
+  background-color: #F2F2F2;
+  ;
 }
 
 .page-header {
@@ -43,12 +43,10 @@ body {
 }
 
 .header-button-link {
-
   color: #FFFFFF;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-
 }
 
 .want-it {
@@ -57,12 +55,16 @@ body {
   padding: 8px 34px;
 }
 
+.page-main {
+  background-color: #FFFFFF;
+}
+
 .hero-section {
   background-image: url(../images/sedona-index-background.jpg);
   background-color: lightblue;
-  background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
+  background-size: cover;
 }
 
 .description-paragraph {
@@ -71,6 +73,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+  color: #000000;
 }
 
 .reason-paragraph {
@@ -84,6 +87,7 @@ body {
   font-weight: 700;
   line-height: 28px;
   font-size: 24px;
+  color: #000000;
 }
 
 .advantages-paragraph {
@@ -118,6 +122,10 @@ body {
 
 .service-list {
   list-style: none;
+}
+
+.service-title {
+  color: #000000;
 }
 
 .service-item h4 {
@@ -162,14 +170,59 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #756157;
+  border-radius: 4px;
+  padding: 8px 50px;
 }
 
-.subscribe-section {
+.subscribe-section-main {
   text-align: center;
   background-image: url(../images/subscribe-background.jpg);
   background-color: lightblue;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+
+.subscribe-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.subscribe-paragraph {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.subscribe-email {
+  font-family: "PT Sans";
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #F2F2F2;
+  border: 0;
+}
+
+.subscribe-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  padding: 8px 50px;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+
+}
+
+.page-footer {
+  background-color: #FFFFFF;
 }
 
 .footer-phone-link {
@@ -178,4 +231,178 @@ body {
   line-height: 40px;
   text-decoration: none;
   color: #000000;
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.footer-vkontakte-item {
+  background-image: url(../images/vkontakte-icon.svg);
+  background-repeat: no-repeat;
+  background-size: 24px 14px;
+}
+
+.footer-telegram-item {
+  background-image: url(../images/telegram-icon.svg);
+  background-repeat: no-repeat;
+  background-size: 18px 16px;
+}
+
+.footer-youtube-item {
+  background-image: url(../images/youtube-icon.svg);
+  background-repeat: no-repeat;
+  background-size: 22px 17px;
+}
+
+.main-inner {
+  background-color: #FFFFFF;
+}
+
+.header-inner {
+  background-image: url(../images/hotels-filter-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.inner-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #FFFFFF;
+}
+
+.inner-list {
+  list-style: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.inner-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.inner-item-main {
+  background-image: url(../images/inner-main-picture.svg);
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+}
+
+.filter-inner-section {
+  color: #FFFFFF;
+}
+
+.catalog-filter-group {
+  border: 0;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.catalog-filter-list {
+  list-style: none;
+}
+
+.control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.filter-range {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: lowercase;
+}
+
+.button-active {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #82B3D3;
+  padding: 8px 50px;
+  border: 0;
+  border-radius: 4px;
+}
+
+.button-inactive {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.catalog-hotels-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.select-switch {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 14px 131px 14px 20px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.view-btns-list {
+  list-style: none;
+}
+
+.view-btns-link {
+  text-decoration: none;
+  color: #333333;
+}
+
+.view-tile {
+  background-image: url(../images/view-tile.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 24px;
+}
+
+.view-card {
+  background-image: url(../images/view-card.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 24px;
+}
+
+.view-list {
+  background-image: url(../images/view-list.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 24px;
+}
+
+.hotel-card-list {
+  list-style: none;
+}
+
+.subscribe-section-inner {
+  text-align: center;
+  background-color: #FFFFFF
+}
+
+.subscribe-section-inner h2 {
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
 }

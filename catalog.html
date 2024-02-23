@@ -4,12 +4,14 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <header class="page-header">
       <nav class="page-navigation">
-        <a href="index.html"><img class="logo-header" src="images/sedona-logo.svg" alt="Логотип городока Седона" width="140" height="70"></a>
+        <a href="index.html"><img class="logo-header" src="images/sedona-logo.svg" alt="Логотип городока Седона"
+            width="140" height="70"></a>
         <ul class="page-header-list">
           <li class="head-list-item"><a class="item-link-navigation" href="index.html">Главная</a></li>
           <li class="head-list-item"><a class="item-link-navigation" href="#">О Седоне</a></li>
@@ -20,7 +22,7 @@
                 class="visually-hidden search">Поиск</span></a></li>
           <li class="head-list-item"><a class="item-link-navigation" href="#"><span
                 class="visually-hidden favorites">Избранное</span></a></li>
-          <li class="head-list-item"><a class="item-link-navigation" href="#"><span class="header-button-link">Хочу
+          <li class="head-list-item"><a class="item-link-navigation want-it" href="#"><span class="header-button-link">Хочу
                 сюда!</span></a></li>
         </ul>
       </nav>
@@ -29,10 +31,9 @@
       <header class="header-inner">
         <h1 class="inner-title">Гостиницы Седоны</h1>
         <ul class="inner-list">
-          <li class="inner-item"><a class="inner-link visually-hidden" href="index.html">Главная</a></li>
+          <li class="inner-item inner-item-main"><a class="inner-link visually-hidden" href="index.html">Главная</a></li>
           <li class="inner-item"><a class="inner-link">Гостиницы</a></li>
         </ul>
-      </header>
       <section class="filter-inner-section">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -51,7 +52,7 @@
             <li class="catalog-filter-item">
               <label class="control">
                 <input class="control-input" type="checkbox" name="wifi">
-                wifi
+                Wi-Fi
               </label>
             </li>
           </ul>
@@ -85,9 +86,10 @@
             До <input type="text" name="max-interval" value="9000">
           </label>
           <button class="button button-active" type="submit">Применить</button>
-          <button class="button" type="submit">Сбросить</button>
+          <button class="button button-inactive" type="submit">Сбросить</button>
         </fieldset>
       </section>
+      </header>
       <section class="catalog-hotels">
         <h2 class="catalog-hotels-title">Найдено гостиниц:<span class="hotels-found">38</span></h2>
         <select class="select-switch">
@@ -95,17 +97,17 @@
           <option value="expensive">Сначала дорогие</option>
         </select>
         <ul class="view-btns-list">
-          <li class="view-btns-item">
+          <li class="view-btns-item view-tile">
             <a class="view-btns-link" href="#">
               <span class="visually-hidden">Раскладка каталога плиткой</span>
             </a>
           </li>
-          <li class="view-btns-item">
+          <li class="view-btns-item view-card">
             <a class="view-btns-link" href="#">
               <span class="visually-hidden">Раскладка каталога карточками</span>
             </a>
           </li>
-          <li class="view-btns-item">
+          <li class="view-btns-item view-list">
             <a class="view-btns-link" href="#">
               <span class="visually-hidden">Раскладка каталога списком</span>
             </a>
@@ -143,7 +145,8 @@
             <p class="hotel-rating">Рейтинг:<span class="hotel-rating-points">6,9</span></p>
           </li>
           <li class="hotel-card-item">
-            <img src="images/hotels-photo/hotel-4.jpg" alt="Вид каньона на фоне звездного неба" width="300" height="212">
+            <img src="images/hotels-photo/hotel-4.jpg" alt="Вид каньона на фоне звездного неба" width="300"
+              height="212">
             <h3 class="hotel-name-title">GreenTree Inn</h3>
             <p class="hotel-type">Гостиница</p>
             <p class="hotel-price">От 1500 ₽</p>
@@ -162,7 +165,7 @@
           <li class="pagination-item"><a class="pagination-link" href="#">10</a></li>
         </ul>
       </section>
-      <section class="subscribe-section">
+      <section class="subscribe-section-inner">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-paragraph">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -170,21 +173,21 @@
             <label class="subscribe-label" for="email-user">Ваш e-mail</label>
             <input type="text" id="email-user" name="email-user" placeholder="Ваш e-mail">
           </p>
-          <button class="subscribe-btn" type="submit">Подписаться</button>
+          <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
     <footer class="page-footer">
       <ul class="footer-social-list">
-        <li class="footer-social-item">
+        <li class="footer-social-item footer-vkontakte-item">
           <a class="footer-social-link" href="https://vk.com/htmlacademy"><span
               class="visually-hidden">Вконтакте</span></a>
         </li>
-        <li class="footer-social-item">
+        <li class="footer-social-item footer-telegram-item">
           <a class="footer-social-link" href="https://t.me/htmlacademy"><span
               class="visually-hidden">Телеграм</span></a>
         </li>
-        <li class="footer-social-item"><a class="footer-social-link"
+        <li class="footer-social-item footer-youtube-item"><a class="footer-social-link"
             href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span></a></li>
       </ul>
       <a class="footer-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
