@@ -204,6 +204,9 @@ margin-right: 0;
 
 .service-list {
   list-style: none;
+  display: flex;
+
+  padding: 0;
 }
 
 .service-title {
@@ -217,14 +220,21 @@ margin-right: 0;
 
 .service-souvenirs-blue-block {
   background-color: #83B3D31F;
+  width: 400px;
+  height: 385px;
 }
 
 .service-eat-white-block {
   background-color: #FFFFFF;
+  width: 400px;
+  height: 385px;
 }
 
 .service-living-blue-block {
   background-color: #83B3D31F;
+  width: 400px;
+  height: 385px;
+
 }
 
 .service-section {
