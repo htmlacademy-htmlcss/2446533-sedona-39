@@ -27,7 +27,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-inner page-main">
       <header class="header-inner">
         <h1 class="inner-title">Гостиницы Седоны</h1>
         <ul class="inner-list">
@@ -78,6 +78,8 @@
               </label>
             </li>
           </ul>
+          </fieldset>
+          <fieldset class="catalog-filter-group catalog-filter-group-price">
           <legend class="filter-title">Стоимость, ₽:</legend>
           <label class="filter-range">
             От <input type="text" name="min-interval" value="0">
@@ -85,12 +87,15 @@
           <label class="filter-range">
             До <input type="text" name="max-interval" value="9000">
           </label>
+            </div>
+          <div class="buttons-group-filter">
           <button class="button button-active" type="submit">Применить</button>
           <button class="button button-inactive" type="submit">Сбросить</button>
         </fieldset>
       </section>
       </header>
-      <section class="catalog-hotels">
+      <section class="catalog-hotels-section">
+        <div class="catalog-select-group">
         <h2 class="catalog-hotels-title">Найдено гостиниц:<span class="hotels-found">38</span></h2>
         <select class="select-switch">
           <option value="cheap" selected>Сначала дешевые</option>
@@ -113,6 +118,7 @@
             </a>
           </li>
         </ul>
+        </div>
         <ul class="hotel-card-list">
           <li class="hotel-card-item">
             <img src="images/hotels-photo/hotel-1.jpg" alt="Вид на звезды через пещеру" width="300" height="212">
