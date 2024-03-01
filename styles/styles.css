@@ -455,7 +455,9 @@ margin-right: 0;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
+  padding: 40px 70px 30px 70px;
 }
+
 
 .footer-phone-link {
   font-weight: 400;
@@ -468,6 +470,7 @@ margin-right: 0;
 .footer-social-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer-vkontakte-item {
