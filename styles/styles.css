@@ -37,7 +37,8 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
-
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -50,6 +51,7 @@ body {
   line-height: 24px;
   width: 1200px;
   margin: 0 auto;
+
 }
 
 .page-navigation {
@@ -92,6 +94,8 @@ margin-right: 0;
 .search {
   background-image: url(../images/header-search.svg);
   background-repeat: no-repeat;
+  background-size: 20px 20px;
+  color: #000000;
 }
 
 .item-link-navigation {
@@ -113,6 +117,21 @@ margin-right: 0;
   padding: 8px 34px;
 }
 
+.current-header {
+  position: relative;
+}
+
+.current-header::after {
+  position: absolute;
+  content: "";
+  width: 68px;
+  height: 2px;
+  bottom: -20px;
+  left: 50%;
+  background-color: #756257;
+  margin-left: -33px;
+}
+
 .main-inner{
   background-color: #FFFFFF;
 }
@@ -128,11 +147,12 @@ margin-right: 0;
 }
 
 .hero-section {
-  background-image: url(../images/sedona-index-background.jpg);
+  background-image: url(../images/background-hero-razor.svg),url(../images/sedona-index-background.jpg);
   background-color: lightblue;
   background-repeat: no-repeat;
   text-align: center;
-  background-size: cover;
+  background-size: 100% auto, cover;
+  background-position: center bottom;
   min-height: 485px;
   margin-top: -6px;
 }
@@ -181,6 +201,26 @@ margin-right: 0;
   padding: 0;
   margin-bottom: 62px;
   width: 175px;
+  position: relative;
+}
+
+.advantages-title::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: #0000004D;
+  bottom: -32px;
+  left: 50%;
+  margin-left: -30px;
+}
+
+.advantages-title-first::after {
+  background-color: #FFFFFF4D;
+}
+
+.advantages-title-last::after {
+  background-color: #FFFFFF4D;
 }
 
 .advantages-paragraph {
@@ -269,11 +309,37 @@ margin-right: 0;
   display: flex;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .service-title {
   color: #000000;
 }
+
+.service-title-icon::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 72px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.service-title-living::before {
+  background-image: url(../images/housing-icon.svg);
+}
+
+.service-title-food::before {
+  background-image: url(../images/food-icon.svg);
+}
+
+.service-title-souvenirs::before {
+  background-image: url(../images/sounevir-icon.svg);
+}
+
 
 .service-item h4 {
   font-weight: 700;
@@ -296,6 +362,15 @@ margin-right: 0;
   padding: 0;
 }
 
+.service-item:nth-child(odd) {
+  background-color: #83B3D31F;
+}
+
+.service-item:nth-child(even) {
+  background-color: #FFFFFF;
+}
+
+
 .service-souvenirs-blue-block {
   background-color: #83B3D31F;
   text-align: center;
@@ -308,7 +383,7 @@ margin-right: 0;
 }
 
 .service-eat-white-block {
-  background-color: #FFFFFF;
+
   text-align: center;
   min-width: 400px;
   display: flex;
@@ -480,10 +555,14 @@ margin-right: 0;
   margin: 0;
 }
 
-.footer-vkontakte-item {
+.footer-social-vk {
   background-image: url(../images/vkontakte-icon.svg);
   background-repeat: no-repeat;
   background-size: 24px 14px;
+  display: block;
+  height: 40px;
+  background-color: #83B3D3;
+  background-position: center;
 }
 
 .footer-telegram-item {
@@ -648,14 +727,13 @@ margin-right: 0;
 
 .hotel-card-list-container {
   margin-top: 40px;
-
+  width: 1200px;
 }
 
 .hotel-card-list {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0;
   margin-left: 70px;
   list-style: none;
 }
