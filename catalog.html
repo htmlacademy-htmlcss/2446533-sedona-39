@@ -14,15 +14,16 @@
           <a href="index.html"><img class="logo-header-link" src="images/sedona-logo.svg" alt="Логотип городока Седона"
               width="140" height="70"></a>
           <ul class="page-header-list page-header-navigation">
-            <li class="head-list-item"><a class="item-link-navigation" href="index.html">Главная</a></li>
-            <li class="head-list-item"><a class="item-link-navigation" href="#">О Седоне</a></li>
-            <li class="head-list-item"><a class="item-link-navigation current" href="catalog.html">Гостиницы</a></li>
+            <li class="head-list-item-user"><a class="item-link-navigation" href="index.html">Главная</a></li>
+            <li class="head-list-item-user"><a class="item-link-navigation" href="#">О Седоне</a></li>
+            <li class="head-list-item-user"><a class="item-link-navigation current-header-inner"
+                href="catalog.html">Гостиницы</a></li>
           </ul>
           <ul class="page-header-list user-navigation">
-            <li class="head-list-item search"><a class="item-link-navigation" href="#"><span
+            <li class="head-list-item"><a class="item-link-navigation search-user-image" href="#"><span
                   class="visually-hidden">Поиск</span></a></li>
-            <li class="head-list-item"><a class="item-link-navigation" href="#"><span
-                  class="visually-hidden favorites">Избранное</span></a></li>
+            <li class="head-list-item"><a class="item-link-navigation favorites-user-image" href="#"><span
+                  class="visually-hidden">Избранное</span></a></li>
             <li class="head-list-item"><a class="item-link-navigation want-it" href="#"><span
                   class="header-button-link">Хочу
                   сюда!</span></a></li>
@@ -105,24 +106,24 @@
         </header>
         <section class="catalog-hotels-section">
           <div class="catalog-select-group">
-            <h2 class="catalog-hotels-title">Найдено гостиниц:<span class="hotels-found">38</span></h2>
+            <h2 class="catalog-hotels-title">Найдено гостиниц: <span class="hotels-found">38</span></h2>
             <select class="select-switch">
               <option value="cheap" selected>Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
             </select>
             <ul class="view-buttons-list">
-              <li class="view-buttons-item view-tile">
-                <a class="view-buttons-link" href="#">
+              <li class="view-buttons-item">
+                <a class="view-buttons-link view-tile" href="#">
                   <span class="visually-hidden">Раскладка каталога плиткой</span>
                 </a>
               </li>
-              <li class="view-buttons-item view-card">
-                <a class="view-buttons-link" href="#">
+              <li class="view-buttons-item">
+                <a class="view-buttons-link view-card" href="#">
                   <span class="visually-hidden">Раскладка каталога карточками</span>
                 </a>
               </li>
-              <li class="view-buttons-item view-list">
-                <a class="view-buttons-link" href="#">
+              <li class="view-buttons-item">
+                <a class="view-buttons-link view-list" href="#">
                   <span class="visually-hidden">Раскладка каталога списком</span>
                 </a>
               </li>
@@ -144,7 +145,7 @@
                   <a class="hotel-add-favorites-button" href="#">в избранное</a>
                 </div>
                 <div class="hotel-stars-rating-container">
-                  <p class="hotel-stars"><span class="visually-hidden">4 звезды</span></p>
+                  <p class="hotel-stars stars-images"><span class="visually-hidden">4 звезды</span></p>
                   <p class="hotel-rating">Рейтинг:<span class="hotel-rating-points"> 8,5</span></p>
                 </div>
               </li>
@@ -162,7 +163,7 @@
                   <a class="hotel-add-favorites-button" href="#">в избранное</a>
                 </div>
                 <div class="hotel-stars-rating-container">
-                  <p class="hotel-stars"><span class="visually-hidden">4 звезды</span></p>
+                  <p class="hotel-stars stars-images"><span class="visually-hidden">4 звезды</span></p>
                   <p class="hotel-rating">Рейтинг:<span class="hotel-rating-points"> 9,2</span></p>
                 </div>
               </li>
@@ -180,7 +181,7 @@
                   <a class="hotel-add-favorites-button" href="#">в избранное</a>
                 </div>
                 <div class="hotel-stars-rating-container">
-                  <p class="hotel-stars"><span class="visually-hidden">3 звезды</span></p>
+                  <p class="hotel-stars stars-images three-stars"><span class="visually-hidden">3 звезды</span></p>
                   <p class="hotel-rating">Рейтинг:<span class="hotel-rating-points"> 6,9</span></p>
                 </div>
               </li>
@@ -199,7 +200,7 @@
                   <a class="hotel-add-favorites-button" href="#">в избранное</a>
                 </div>
                 <div class="hotel-stars-rating-container">
-                  <p class="hotel-stars"><span class="visually-hidden">2 звезды</span></p>
+                  <p class="hotel-stars stars-images two-stars"><span class="visually-hidden">2 звезды</span></p>
                   <p class="hotel-rating">Рейтинг:<span class="hotel-rating-points"> 5,0</span></p>
                 </div>
               </li>
@@ -231,21 +232,22 @@
       <footer class="page-footer">
         <div class="page-footer-container">
           <ul class="footer-social-list">
-            <li class="footer-social-item footer-vkontakte-item">
-              <a class="footer-social-link" href="https://vk.com/htmlacademy"><span
+            <li class="footer-social-item">
+              <a class="footer-social-link footer-vkontakte-image" href="https://vk.com/htmlacademy"><span
                   class="visually-hidden">Вконтакте</span></a>
             </li>
-            <li class="footer-social-item footer-telegram-item">
-              <a class="footer-social-link" href="https://t.me/htmlacademy"><span
+            <li class="footer-social-item">
+              <a class="footer-social-link footer-telegram-image" href="https://t.me/htmlacademy"><span
                   class="visually-hidden">Телеграм</span></a>
             </li>
-            <li class="footer-social-item footer-youtube-item"><a class="footer-social-link"
+            <li class="footer-social-item"><a class="footer-social-link footer-youtube-image"
                 href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span></a></li>
           </ul>
-          <a class="footer-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <a class="footer-logo-link" href="https://htmlacademy.ru/">
+          <div class="footer-phone-container"><a class="footer-phone-link" href="tel:+78128121212">+7 (812)
+              812-12-12</a></div>
+          <div class="footer-logo-container"><a class="footer-logo-link" href="https://htmlacademy.ru/">
             <img class="html-logo" src="images/logo-htmlacademy.svg" alt="Логотип htmlacademy" width="115" height="33">
-          </a>
+          </a></div>
         </div>
       </footer>
     </div>
