@@ -603,12 +603,40 @@ body {
   max-width: 331px;
 }
 
+.footer-phone-link:hover {
+  color: #756157;
+}
+
+.footer-phone-link:focus {
+  color: #756157;
+}
+
+.footer-phone-link:active {
+  color: #7561574D;
+}
+
 .footer-phone-container {
   max-width: 331px;
 }
 
 .footer-logo-container {
   max-width: 115px;
+}
+
+.footer-academy-icon {
+  fill: #000000;
+}
+
+.footer-academy-icon:hover {
+  fill: #756157;
+}
+
+.footer-academy-icon:focus {
+  fill: #756157;
+}
+
+.footer-academy-icon:active {
+  fill: #7561574D;
 }
 
 .footer-social-list {
@@ -621,38 +649,24 @@ body {
   max-width: 145px;
 }
 
-.footer-vkontakte-image {
-  background-image: url(../images/vkontakte-icon.svg);
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 14px;
-  display: block;
-  background-position: center;
+.footer-icon {
+  fill: #83B3D3;
+}
+
+.footer-social-item {
   padding: 12px;
 }
 
-.footer-telegram-image {
-  background-image: url(../images/telegram-icon.svg);
-  background-repeat: no-repeat;
-  width: 18px;
-  height: 16px;
-  display: block;
-  background-position: center;
-  padding: 12px;
+.footer-icon:hover {
+  fill: #68A2CA;
 }
 
-.footer-youtube-image {
-  background-image: url(../images/youtube-icon.svg);
-  background-repeat: no-repeat;
-  width: 22px;
-  height: 17px;
-  display: block;
-  background-position: center;
-  padding: 12px;
+.footer-icon:focus {
+  fill: #68A2CA;
 }
 
-.footer-social-link:hover {
-  color: #68A2CA;
+.footer-icon:active {
+  fill: #68A2CA4D;
 }
 
 .main-inner {
