@@ -394,7 +394,6 @@ body {
   background-image: url(../images/sounevir-icon.svg);
 }
 
-
 .service-item h4 {
   font-weight: 700;
   text-transform: uppercase;
@@ -416,12 +415,9 @@ body {
   padding: 0;
 }
 
-
-
 .service-item:nth-child(even) {
   background-color: #FFFFFF;
 }
-
 
 .service-souvenirs-blue-block {
   background-color: #83B3D31F;
@@ -1135,12 +1131,22 @@ body {
   font-family: "PT Sans", sans-serif;
   color: #333333;
   padding: 12px 131px 12px 20px;
-  border: 2px solid #E5E5E5;
+  border: none;
+  outline: 2px solid #E5E5E5;
   border-radius: 4px;
   min-width: 292px;
   margin-left: auto;
   cursor: pointer;
 }
+
+.select-switch:hover {
+  outline: 2px solid #68A2CA;
+}
+
+.select-switch:focus {
+  outline: 2px solid #68A2CA;
+}
+
 
 .view-buttons-list {
   list-style: none;
